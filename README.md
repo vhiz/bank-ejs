@@ -1,6 +1,6 @@
 Mgbeahurike Victor Uchenna
 
-This app is hosted on heroku :https://mysterious-mesa-58106.herokuapp.com/
+This app is hosted on heroku :https://bank-appv.herokuapp.com/
 
 this is a nodejs backend application with has 
 JWT authentification,
