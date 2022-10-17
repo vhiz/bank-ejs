@@ -19,8 +19,8 @@ router.post('/deposit/:id', verifiedAuth, async (req, res) => {
         user.amount = parseInt(balance)
         await user.save()
         try {
-            const transaction = ({
-                text:`Deposited ₦${number} at ${Date().toUTCString()} Balance:${balance}`
+            const transaction =({
+                text:`Deposited ₦${number} at ${new Date().toUTCString()}  Balance: ₦${balance}`
             })
             await User.findByIdAndUpdate(req.params.id, {
                 $push: {transactions:transaction}
